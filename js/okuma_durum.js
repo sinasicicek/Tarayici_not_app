@@ -170,19 +170,19 @@ let kaydet=(notum)=>{
 }
 
 let sil=(sil_not)=>{
-        let notlar;
-        let notlarım=localStorage.getItem("Notlar")
+                let notlarım=localStorage.getItem("Notlar")
           if(notlarım === null){
-                  notlar=[];
-          
+                  notlarım=[];
           }
           else {
-                  notlar=JSON.parse(localStorage.getItem("Notlar"))
+                  notlarım=JSON.parse(localStorage.getItem("Notlar"))
+                  const not_numb=notlarım.indexOf(sil_not);
+                  
+                  notlarım.splice(not_numb,1);
+                  localStorage.setItem("Notlar",JSON.stringify(notlarım));
           }
-         let not_numb= notlar.indexOf(sil_not);
-         notlar.splice(not_numb,1);
-          localStorage.setItem("Notlar",JSON.stringify(notlar));
-          console.log(notlar+"  "+not_numb);
+
+
 }
 
 
