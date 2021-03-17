@@ -1,0 +1,75 @@
+:root{
+    --main-color:#a8cdf7;
+    --yazi-font:'Yanone Kaffeesatz', sans-serif;
+    /*
+    kullanmak için var(--main-color)  yazılmalıdır
+    */
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baslik-container {
+    text-align: center;
+}
+.form-container { 
+    text-align: center;
+    margin-top: 80px;
+}
+.icerik-container{ 
+    font-family: var(--yazi-font);
+    background-color:#9090c2;
+     display: flex;
+    font-size: 1.5em;
+    border-radius: 8px;
+
+}
+span { margin:10px;}
+
+body{
+    background-image: linear-gradient(to bottom right, #e0c3fc 0%, #8ec5fc 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh; /*Tüm ekranı kapla diyoruz*/
+    min-width: 100vh;
+
+}
+.baslik{
+    
+    font-family: var(--yazi-font);
+    font-size: 80px; 
+}
+.not-container{
+    margin:50px;
+}
+.sil-btn{
+    width: 50px;
+    height: 50px;
+
+}
+
+.ince-ayar{
+    margin-top:10px;
+}
+.container-ince{
+    margin-top: 10px;
+}
+.input-cerceve{
+
+    height: 130px;
+    width: 460px;
+    border-style: hidden;
+    border-color: transparent;
+    
+}
+.btn-gorev-ekle{
+    width: 180px;
+    margin-left: 20px;
+    border-style: hidden;
+    
+}
+.no-giris{
+    font-family: var(--yazi-font);
+    font-size: 30px;
+}

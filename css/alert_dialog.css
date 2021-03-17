@@ -1,0 +1,12 @@
+.alert_dialog{
+    
+    position:absolute;
+    padding: 10px;
+    right: 20px;
+    bottom: 50px;
+    background-color:rgb(219, 176, 176);
+    border-style:hidden;
+    border-radius: 20px; 
+    font-size: 18px;
+
+}
